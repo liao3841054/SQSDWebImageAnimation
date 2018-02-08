@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SQSDWebImageAnimation
 
 [![CI Status](http://img.shields.io/travis/251180323@qq.com/SQSDWebImageAnimation.svg?style=flat)](https://travis-ci.org/251180323@qq.com/SQSDWebImageAnimation)
@@ -27,3 +28,6 @@ pod 'SQSDWebImageAnimation'
 ## License
 
 SQSDWebImageAnimation is available under the MIT license. See the LICENSE file for more info.
+=======
+# SQSDWebImageAnimation
+>>>>>>> d2939c26a5d8ca4aadcbba5022cd45c73f00ab2f
