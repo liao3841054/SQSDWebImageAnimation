@@ -1,0 +1,6 @@
+framework module SQSDWebImageAnimation {
+  umbrella header "SQSDWebImageAnimation-umbrella.h"
+
+  export *
+  module * { export * }
+}

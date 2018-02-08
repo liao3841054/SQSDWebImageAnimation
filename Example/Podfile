@@ -1,7 +1,8 @@
-use_frameworks!
+#use_frameworks!
 
 target 'SQSDWebImageAnimation_Example' do
   pod 'SQSDWebImageAnimation', :path => '../'
+  pod 'SDWebImage', '~>3.8.2'
 
   target 'SQSDWebImageAnimation_Tests' do
     inherit! :search_paths
