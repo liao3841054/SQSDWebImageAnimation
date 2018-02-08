@@ -210,11 +210,11 @@
 		A378222F202C677100A316C4 /* SQSDWebImageAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				A3782230202C677100A316C4 /* CALayer+SQSDWebAnimation.h */,
-				A3782231202C677100A316C4 /* CALayer+SDWebCache.h */,
-				A3782232202C677100A316C4 /* UIImageView+SQSDWebAnimation.m */,
-				A3782233202C677100A316C4 /* CALayer+SQSDWebAnimation.m */,
 				A3782234202C677100A316C4 /* SQSDWebImageAnimationConst.h */,
+				A3782232202C677100A316C4 /* UIImageView+SQSDWebAnimation.m */,
+				A3782230202C677100A316C4 /* CALayer+SQSDWebAnimation.h */,
+				A3782233202C677100A316C4 /* CALayer+SQSDWebAnimation.m */,
+				A3782231202C677100A316C4 /* CALayer+SDWebCache.h */,
 				A3782235202C677100A316C4 /* CALayer+SDWebCache.m */,
 				A3782236202C677100A316C4 /* UIImageView+SQSDWebAnimation.h */,
 			);
