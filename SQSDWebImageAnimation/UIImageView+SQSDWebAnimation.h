@@ -33,7 +33,6 @@
  */
 - (void)animationLoadImageWithUrl:(NSString *)picUrl placeholderImage:(UIImage *)holderImage duration:(CGFloat)duration completion:(void(^)(UIImage *image))completion;
 
-
 #pragma mark - Animation Operaion
 
 - (void)animationLoadImageWithUrl:(NSString *)picUrl animationOperaion:(SQImageAnimationOperation)operation;
@@ -45,12 +44,11 @@
  
  @param picUrl  图片链接
  @param holderImage 占位图
- @param duration 动画时长；Default 5.6
  @param operation 动画配置属性
  @param transition 自定义动画
  @param completion 加载完成回调
  */
-- (void)animationLoadImageWithUrl:(NSString *)picUrl placeholderImage:(UIImage *)holderImage duration:(CGFloat)duration animationOperaion:(SQImageAnimationOperation)operation transition:(CATransition*)transition completion:(void(^)(UIImage *image))completion;
+- (void)animationLoadImageWithUrl:(NSString *)picUrl placeholderImage:(UIImage *)holderImage animationOperaion:(SQImageAnimationOperation)operation transition:(CATransition*)transition completion:(void(^)(UIImage *image))completion;
 
 
 @end

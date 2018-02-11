@@ -7,6 +7,7 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
+#import <Foundation/Foundation.h>
 #import "SQSDWebImageAnimationConst.h"
 
 @interface CALayer (SQSDWebAnimation)

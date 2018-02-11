@@ -9,7 +9,6 @@
 #import "CALayer+SQSDWebAnimation.h"
 #import "CALayer+SDWebCache.h"
 
-
 @implementation CALayer (SQSDWebAnimation)
 
 

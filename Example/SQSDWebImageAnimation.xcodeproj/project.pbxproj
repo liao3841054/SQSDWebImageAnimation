@@ -23,9 +23,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		A3782237202C677100A316C4 /* UIImageView+SQSDWebAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A3782232202C677100A316C4 /* UIImageView+SQSDWebAnimation.m */; };
-		A3782238202C677100A316C4 /* CALayer+SQSDWebAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A3782233202C677100A316C4 /* CALayer+SQSDWebAnimation.m */; };
-		A3782239202C677100A316C4 /* CALayer+SDWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A3782235202C677100A316C4 /* CALayer+SDWebCache.m */; };
 		C508F1CE6C98118AC403AF58 /* libPods-SQSDWebImageAnimation_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F853B6D233A89B9B072EDEB /* libPods-SQSDWebImageAnimation_Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -66,13 +63,6 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78E36253A29B68D6268C36A0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A3782230202C677100A316C4 /* CALayer+SQSDWebAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+SQSDWebAnimation.h"; sourceTree = "<group>"; };
-		A3782231202C677100A316C4 /* CALayer+SDWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+SDWebCache.h"; sourceTree = "<group>"; };
-		A3782232202C677100A316C4 /* UIImageView+SQSDWebAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SQSDWebAnimation.m"; sourceTree = "<group>"; };
-		A3782233202C677100A316C4 /* CALayer+SQSDWebAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+SQSDWebAnimation.m"; sourceTree = "<group>"; };
-		A3782234202C677100A316C4 /* SQSDWebImageAnimationConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQSDWebImageAnimationConst.h; sourceTree = "<group>"; };
-		A3782235202C677100A316C4 /* CALayer+SDWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+SDWebCache.m"; sourceTree = "<group>"; };
-		A3782236202C677100A316C4 /* UIImageView+SQSDWebAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SQSDWebAnimation.h"; sourceTree = "<group>"; };
 		A3936A57C0ADA5FA7119C4B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A5AB68DEEB451AC0893C271D /* Pods-SQSDWebImageAnimation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQSDWebImageAnimation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SQSDWebImageAnimation_Example/Pods-SQSDWebImageAnimation_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A7173D97438EF451A9BE5B40 /* SQSDWebImageAnimation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SQSDWebImageAnimation.podspec; path = ../SQSDWebImageAnimation.podspec; sourceTree = "<group>"; };
@@ -108,7 +98,6 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				A378222F202C677100A316C4 /* SQSDWebImageAnimation */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for SQSDWebImageAnimation */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -205,21 +194,6 @@
 				3F1F239E8E9D0B45075734D4 /* Pods-SQSDWebImageAnimation_Tests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		A378222F202C677100A316C4 /* SQSDWebImageAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				A3782234202C677100A316C4 /* SQSDWebImageAnimationConst.h */,
-				A3782232202C677100A316C4 /* UIImageView+SQSDWebAnimation.m */,
-				A3782230202C677100A316C4 /* CALayer+SQSDWebAnimation.h */,
-				A3782233202C677100A316C4 /* CALayer+SQSDWebAnimation.m */,
-				A3782231202C677100A316C4 /* CALayer+SDWebCache.h */,
-				A3782235202C677100A316C4 /* CALayer+SDWebCache.m */,
-				A3782236202C677100A316C4 /* UIImageView+SQSDWebAnimation.h */,
-			);
-			name = SQSDWebImageAnimation;
-			path = ../SQSDWebImageAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,10 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* SQAppDelegate.m in Sources */,
-				A3782237202C677100A316C4 /* UIImageView+SQSDWebAnimation.m in Sources */,
 				6003F5A7195388D20070C39A /* SQViewController.m in Sources */,
-				A3782238202C677100A316C4 /* CALayer+SQSDWebAnimation.m in Sources */,
-				A3782239202C677100A316C4 /* CALayer+SDWebCache.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

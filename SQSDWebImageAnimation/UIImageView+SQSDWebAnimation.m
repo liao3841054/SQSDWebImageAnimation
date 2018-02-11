@@ -45,10 +45,12 @@
 }
 
 - (void)animationLoadImageWithUrl:(NSString *)picUrl placeholderImage:(UIImage *)holderImage duration:(CGFloat)duration animationOperaion:(SQImageAnimationOperation)operation completion:(void(^)(UIImage *image))completion {
-    [self animationLoadImageWithUrl:picUrl placeholderImage:holderImage duration:duration animationOperaion:operation transition:nil completion:completion];
+    
+    CATransition *transition = [self sq_defaultAnimationWithDuration:duration > 0 ? duration: kSQSDWebAnimationDefaultDuration];
+    [self animationLoadImageWithUrl:picUrl placeholderImage:holderImage animationOperaion:operation transition:transition completion:completion];
 }
 
-- (void)animationLoadImageWithUrl:(NSString *)picUrl placeholderImage:(UIImage *)holderImage duration:(CGFloat)duration animationOperaion:(SQImageAnimationOperation)operation transition:(CATransition*)transition completion:(void(^)(UIImage *image))completion{
+- (void)animationLoadImageWithUrl:(NSString *)picUrl placeholderImage:(UIImage *)holderImage animationOperaion:(SQImageAnimationOperation)operation transition:(CATransition*)transition completion:(void(^)(UIImage *image))completion{
     
     __weak typeof(self) _self = self;
     [self sd_setImageWithURL:(NSURL *)picUrl placeholderImage:holderImage options:SDWebImageRetryFailed | SDWebImageAvoidAutoSetImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
@@ -65,10 +67,6 @@
         else {
             if (image) {
                 if ([self animationWithOperation:operation cacheType:cacheType]) {
-                    CATransition *transition = nil;
-                    if (!transition) {
-                        transition = [self sq_defaultAnimationWithDuration:duration];
-                    }
                     [self.layer addAnimation:transition forKey:@"image_fade"];
                 }
                 self.image = image;
