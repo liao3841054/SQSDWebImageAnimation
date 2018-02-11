@@ -2,7 +2,8 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - SQSDWebImageAnimation (0.1.0)
+  - SQSDWebImageAnimation (0.1.0):
+    - SDWebImage (~> 3.8.2)
 
 DEPENDENCIES:
   - SDWebImage (~> 3.8.2)
@@ -14,7 +15,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  SQSDWebImageAnimation: 28b5f54fc0b58f3ac8ca0ed1783fb034ef45335a
+  SQSDWebImageAnimation: ff2efa2a698385291787843fe201dfe9549858bc
 
 PODFILE CHECKSUM: e95f26186b02ea7b43fef90be9193b3e0b5d9607
 

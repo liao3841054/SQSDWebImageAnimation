@@ -6,8 +6,7 @@
 //  Copyright © 2018年 SQKB. All rights reserved.
 //
 
-#import <QuartzCore/QuartzCore.h>
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "SQSDWebImageAnimationConst.h"
 
 @interface CALayer (SQSDWebAnimation)

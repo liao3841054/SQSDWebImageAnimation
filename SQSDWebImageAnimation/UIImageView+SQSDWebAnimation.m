@@ -36,6 +36,11 @@
     [self animationLoadImageWithUrl:picUrl placeholderImage:holderImage duration:duration animationOperaion:SQImageAnimationOperationNotMemory completion:completion];
 }
 
+- (void)animationLoadImageWithUrl:(NSString *)picUrl placeholderImage:(UIImage *)holderImage transition:(CATransition*)transition completion:(void(^)(UIImage *image))completion
+{
+    [self animationLoadImageWithUrl:picUrl placeholderImage:holderImage animationOperaion:SQImageAnimationOperationNotMemory transition:transition completion:completion];
+}
+
 - (void)animationLoadImageWithUrl:(NSString *)picUrl animationOperaion:(SQImageAnimationOperation)operation {
     [self animationLoadImageWithUrl:picUrl placeholderImage:nil animationOperaion:operation completion:nil];
 }
@@ -51,6 +56,8 @@
 }
 
 - (void)animationLoadImageWithUrl:(NSString *)picUrl placeholderImage:(UIImage *)holderImage animationOperaion:(SQImageAnimationOperation)operation transition:(CATransition*)transition completion:(void(^)(UIImage *image))completion{
+    
+    NSAssert(transition, @"animationLoadImageWithUrl transition not nil");
     
     __weak typeof(self) _self = self;
     [self sd_setImageWithURL:(NSURL *)picUrl placeholderImage:holderImage options:SDWebImageRetryFailed | SDWebImageAvoidAutoSetImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {

@@ -1,9 +1,9 @@
 {
   "name": "SQSDWebImageAnimation",
   "version": "0.1.0",
-  "summary": "A short description of SQSDWebImageAnimation.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/251180323@qq.com/SQSDWebImageAnimation",
+  "summary": "配合UIImageView为SDWebImage图片加载量身打造的动画小组件",
+  "description": "配合UIImageView为SDWebImage图片加载量身打造的动画小组件，可以自定义加载动画和时长",
+  "homepage": "https://github.com/liao3841054/SQSDWebImageAnimation",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,16 @@
     "251180323@qq.com": "251180323@qq.com"
   },
   "source": {
-    "git": "https://github.com/251180323@qq.com/SQSDWebImageAnimation.git",
+    "git": "https://github.com/liao3841054/SQSDWebImageAnimation.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "SQSDWebImageAnimation/Classes/**/*"
+  "source_files": "SQSDWebImageAnimation/**/*",
+  "dependencies": {
+    "SDWebImage": [
+      "~>3.8.2"
+    ]
+  }
 }

@@ -7,6 +7,7 @@
 //
 
 #import "SQViewController.h"
+#import <SQSDWebImageAnimation/UIImageView+SQSDWebAnimation.h>
 
 @interface SQViewController ()
 
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UIImageView *imageView = [[UIImageView alloc] init];
+    [imageView animationLoadImageWithUrl:@""];
+    [self.view addSubview:imageView];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
