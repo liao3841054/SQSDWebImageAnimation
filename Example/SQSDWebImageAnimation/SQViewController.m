@@ -19,12 +19,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    UIImageView *imageView = [[UIImageView alloc] init];
-    [imageView animationLoadImageWithUrl:@""];
-    [self.view addSubview:imageView];
-    
-    
+ 
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    [imageView animationLoadImageWithUrl:@"http://p3.so.qhmsg.com/t0130f5bffc1b0f8708.jpg"];
+//    @"http://p2.so.qhimgs1.com/t0166f330df9d09c87e.jpg",
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    [self.view addSubview:imageView];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
